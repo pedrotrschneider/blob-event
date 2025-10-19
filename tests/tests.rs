@@ -1,8 +1,8 @@
+use blob_event::{Event, Subscription};
+use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::time::Duration;
-use std::sync::atomic::{AtomicUsize, Ordering};
-use blob_event::{Event, Subscription};
 
 #[test]
 fn test_event_with_no_parameters() {

@@ -1,5 +1,5 @@
-use std::sync::{Arc, Mutex};
 use std::collections::HashMap;
+use std::sync::{Arc, Mutex};
 
 // Core trait that defines what an event can do
 trait EventHandler<Args>: Send {
